@@ -8,6 +8,9 @@
     <section class="main-content">
       <p>Same as <a href="https://github.com/niksmr/vue-masked-input">https://github.com/niksmr/vue-masked-input</a> but with the placeholder that stays visible while you're typing (see <a href="https://github.com/niksmr/vue-masked-input/issues/49">issue #49</a>).</p>
       <hr>
+      <h3>Browser Compatibility:</h3>
+      <p>IE11, and all modern browsers.</p>
+
       <h3>Patterns:</h3>
       <ul>
         <li>1 – number</li>
@@ -21,7 +24,8 @@
       <p>Use an <b>array</b> for <code>placeholder-char</code> to keep the placeholder up while typing.</p>
       <p>Use a <b>string</b> for <code>placeholder-char</code> to get the normal behavior.</p>
 
-      <h3>Date: </h3>
+      <h3>Examples:</h3>
+      <h4>Date: </h4>
       <p>
         <input-masked
          type="text"
@@ -29,7 +33,7 @@
          placeholder="YYYY-MM-DD"
          :placeholder-char="'YYYY-MM-DD'.split('')"
          v-model="date"></input-masked> <span class="value">{{ date }}</span>
-       <h4>Code:</h4>
+       <h5>Code:</h5>
        <pre>
         <code>
 &lt;input-masked
@@ -42,7 +46,7 @@
        </pre>
       </p>
 
-      <h3>Time: </h3>
+      <h4>Time: </h4>
       <p>
         <input-masked
          type="text"
@@ -50,7 +54,7 @@
          placeholder="hh:ss"
          :placeholder-char="['h','h',':','s','s']"
          v-model="time"></input-masked> <span class="value">{{ time }}</span>
-        <h4>Code:</h4>
+        <h5>Code:</h5>
         <pre>
          <code>
 &lt;input-masked
@@ -63,7 +67,7 @@
         </pre>
       </p>
 
-      <h3>Phone: </h3>
+      <h4>Phone: </h4>
       <p>
         <input-masked
          type="text"
@@ -71,7 +75,7 @@
          placeholder="+11 (111) 1111-11"
          placeholder-char="_"
          v-model="phone"></input-masked> <span class="value">{{ phone }}</span>
-        <h4>Code:</h4>
+        <h5>Code:</h5>
         <pre>
          <code>
 &lt;input-masked
