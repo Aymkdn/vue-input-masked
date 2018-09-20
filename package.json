@@ -1,6 +1,6 @@
 {
-  "name": "vue-input-masked",
-  "version": "0.9.0",
+  "name": "@aymkdn/vue-input-masked",
+  "version": "1.0.0",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build"
